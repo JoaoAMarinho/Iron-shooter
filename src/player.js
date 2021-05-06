@@ -19,7 +19,7 @@ export default class Player {
         this.maxEnergy = energy;
 
         this.playerSprite = new Image();
-        this.playerSprite.src = "/images/sprites/IronManSprites.png";
+        this.playerSprite.src = "./images/sprites/IronManSprites.png";
 
         this.spritePosition = {
             x: 0,

@@ -12,7 +12,7 @@ export default class Explosion {
         };
 
         this.explosionSprite = new Image();
-        this.explosionSprite.src = "/images/sprites/DeathSprites.png";
+        this.explosionSprite.src = "./images/sprites/DeathSprites.png";
 
         this.spritePosition = {
             x: 0

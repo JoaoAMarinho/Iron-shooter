@@ -16,7 +16,7 @@ export default class PowerUp {
         this.lifeTime=3000;
         
         this.powerUpSprite = new Image();
-        this.powerUpSprite.src = "/images/sprites/HeartSprites.png";
+        this.powerUpSprite.src = "./images/sprites/HeartSprites.png";
 
         this.spritePosition = {
             x: 0,

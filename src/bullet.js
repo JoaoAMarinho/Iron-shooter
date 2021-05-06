@@ -14,7 +14,7 @@ export default class Bullet {
         this.maxSpeed = 12;
 
         this.bulletSprite = new Image();
-        this.bulletSprite.src = "/images/sprites/LaserSprite.png";
+        this.bulletSprite.src = "./images/sprites/LaserSprite.png";
     }
 
     //Movement

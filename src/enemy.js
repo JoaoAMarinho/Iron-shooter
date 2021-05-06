@@ -21,7 +21,7 @@ export default class Enemy {
         this.maxSpeed = 3;
 
         this.enemySprite = new Image();
-        this.enemySprite.src = "/images/sprites/RocketSprites.png";
+        this.enemySprite.src = "./images/sprites/RocketSprites.png";
 
         this.spritePosition = {
             x: 0,

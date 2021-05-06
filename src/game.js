@@ -52,7 +52,7 @@ export default class Game {
         this.gameHealth.innerHTML="❤❤❤";
 
         this.background = new Image();
-        this.background.src = "/images/gameBackground.png";
+        this.background.src = "./images/gameBackground.png";
 
         this.createObjects();
         this.loadSounds();
@@ -279,14 +279,14 @@ export default class Game {
             this.spawnPowerUps(interval); }, interval);
     }
     createObjects(){
-        this.objects.push( new Object(148, 123, 435, 0, "/images/sprites/objects/bigHouse.png") );
-        this.objects.push( new Object(59, 96, 590, 16, "/images/sprites/objects/smallHouse.png") );
-        this.objects.push( new Object(59, 96, 649, 16, "/images/sprites/objects/smallHouse.png") );
-        this.objects.push( new Object(59, 96, 707, 16, "/images/sprites/objects/smallHouse.png") );
-        this.objects.push( new Object(124, 116, 32, 402, "/images/sprites/objects/stadium.png") );
-        this.objects.push( new Object(40, 70, 139, 500, "/images/sprites/objects/dragonStatue.png") );
-        this.objects.push( new Object(40, 70, 3, 500, "/images/sprites/objects/dragonStatue.png") );
-        this.objects.push( new Object(113, 132, 684, 465, "/images/sprites/objects/plane.png") );
+        this.objects.push( new Object(148, 123, 435, 0, "./images/sprites/objects/bigHouse.png") );
+        this.objects.push( new Object(59, 96, 590, 16, "./images/sprites/objects/smallHouse.png") );
+        this.objects.push( new Object(59, 96, 649, 16, "./images/sprites/objects/smallHouse.png") );
+        this.objects.push( new Object(59, 96, 707, 16, "./images/sprites/objects/smallHouse.png") );
+        this.objects.push( new Object(124, 116, 32, 402, "./images/sprites/objects/stadium.png") );
+        this.objects.push( new Object(40, 70, 139, 500, "./images/sprites/objects/dragonStatue.png") );
+        this.objects.push( new Object(40, 70, 3, 500, "./images/sprites/objects/dragonStatue.png") );
+        this.objects.push( new Object(113, 132, 684, 465, "./images/sprites/objects/plane.png") );
     }
     createEnemy(n){
         for (let index = 0; index < n; index++) {
@@ -346,7 +346,7 @@ export default class Game {
     loadSounds(){
         //Background Music
         let s;
-        s = new Audio("/sounds/background.mp3");
+        s = new Audio("./sounds/background.mp3");
         s.loop=true;
         s.volume = 0.05;
         this.soundIndexes.background = this.sounds.length;
@@ -355,7 +355,7 @@ export default class Game {
         //Shooting Effects
         let a = [];
         for (let index = 0; index < 3; index++) {
-            s = new Audio("/sounds/laser.mp3");
+            s = new Audio("./sounds/laser.mp3");
             s.volume = 0.1;
             a.push(s);
         }

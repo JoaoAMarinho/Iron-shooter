@@ -11,7 +11,7 @@ export default class Mouse {
         };
 
         this.mouseSprite = new Image();
-        this.mouseSprite.src = "/images/MouseCrosshair.png";
+        this.mouseSprite.src = "./images/MouseCrosshair.png";
     }
     update(newPosition){
         this.position.x=newPosition.x;
