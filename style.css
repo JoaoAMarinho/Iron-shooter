@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body {
+    background-image: url("/images/screenBackground.jpg");
+    background-size: cover;
+}
+
+/* Game Display */
+#gameScreen {
+    width: 800px;
+    height: 600px;
+    /*border: 3px solid #000; Yellow #FFFF66;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: none;
+    background-color: #FFFFFF;
+}
+
+/* Restart Menu */
+#container1{
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.endGame{
+    background-color: #FFFFFF;
+    max-width: 28rem;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+}
+#value {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+#points {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, var(--tw-text-opacity));
+    margin-bottom: 1rem;
+}
+#startButton{
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    width: 100%;
+    border-style: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* Game score */
+#score {
+    position: absolute;
+    user-select: none;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-400px, +300px);
+    display: none;
+}
+
+/* Player energy */
+#health {
+    position: absolute;
+    user-select: none;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(+302px, +300px);
+    display: none;
+}
